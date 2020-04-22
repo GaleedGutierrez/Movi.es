@@ -1,0 +1,61 @@
+@media screen and (max-width:425px) {
+  body {
+    font-size: 14px;
+  }
+  header ul {
+    height: 4rem;
+    margin: auto;
+    box-shadow: none;
+  }
+  header .icon img {
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0;
+  }
+  header .icon span {
+    font-size: 1.1rem;
+  }
+  header .search input {
+    width: 100%;
+    height: 2.857rem;
+    border-radius: 2rem;
+    padding: 0 20px 0;
+    font-size: .786rem;
+  }
+  header .hero span {
+    display: none;
+  }
+  header .hero img {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0 .643rem 0;
+  }
+  main {
+    display: block;
+  }
+  main .content {
+    display: block;
+  }
+  .content {
+    grid-area: content;
+  }
+  main .bar-left{
+    grid-area: bar-left;
+    height: 3.429rem;
+    align-self: center;
+  }
+  main .icons {
+    color:white;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 1fr;
+    width: 100%;
+    grid-template-areas: "home fire heart setting";
+  }
+.icon-home p,
+.icon-fire p,
+.icon-heart p,
+.icon-setting p {
+  display: none;
+  }
+}

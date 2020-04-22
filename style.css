@@ -1,0 +1,261 @@
+/* --------------------general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+
+}
+figure {
+  margin: 0;
+  
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+/* --------------------general end */
+
+/* --------------------icons */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icons/fonts/icomoon.eot?t0gj7s');
+  src:  url('icons/fonts/icomoon.eot?t0gj7s#iefix') format('embedded-opentype'),
+    url('icons/fonts/icomoon.ttf?t0gj7s') format('truetype'),
+    url('icons/fonts/icomoon.woff?t0gj7s') format('woff'),
+    url('icons/fonts/icomoon.svg?t0gj7s#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e901";
+  
+}
+.icon-home:before {
+  content: "\e900";
+  font-size: 200%;
+}
+.icon-setting:before {
+  content: "\e994";
+  font-size: 200%;
+}
+.icon-fire:before {
+  content: "\e9a9";
+  font-size: 200%;
+}
+.icon-heart:before {
+  content: "\e9da";
+  font-size: 200%;
+}
+/* --------------------icons end */
+
+/* --------------------header start */
+header ul {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-areas: "icon search hero";
+  width: 100%;
+  /* max-width: 1024px; */
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  box-shadow: 0 0 .7em .1em #989191;
+}
+header .icon {
+  grid-area: icon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+header .icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  padding: 0 10px 0;
+}
+header .icon span {
+  font-family: 'Monoton', cursive;
+  font-size: 25px;
+}
+header .hero {
+  grid-area: hero;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+} 
+header .hero img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 0 10px 0;
+}
+header .search {
+  grid-area: search;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .search input {
+  width: 100%;
+  height: 6vh;
+  border-radius: 2em;
+  box-sizing: border-box;
+  padding: 0 20px 0;
+  border: .05em solid #dbdbe2;
+  font-size: 16px;
+}
+header .search input:focus {
+   outline: none;
+}
+/* --------------------header end */
+
+/* --------------------main start */
+main {
+  display: grid;
+  grid-template-columns: 5% 95%;
+  grid-template-areas: "bar-left content";
+  width: 100%;
+}
+main .content {
+  padding: .5%;
+  grid-area: content;
+}
+.bar-left {
+  grid-area: bar-left;
+}
+main .content-container {
+  display: grid;
+  grid-auto-flow: row;
+
+}
+.rows-style {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1.5%;
+  overflow-x: scroll;
+}
+.rows-style figure img {
+  width: 20rem;
+  height: 10rem;
+  object-fit: cover;
+  vertical-align: top;
+  margin: 0;
+  cursor: pointer;
+}
+.rows{
+  width: 20rem;
+  height: 10rem;
+}
+.text-description {
+  font-size: .785em;
+  width: 20rem;
+  height: 5rem;
+  background: rgba(254, 89, 93, 0.5);
+  position: relative;
+  margin-top: -25%;
+  color: white;
+  box-sizing: border-box;
+  padding: .2rem;
+  display: none;
+  cursor: pointer;
+}
+figure:hover .text-description {
+  display: block;
+}
+.text-description h4 {
+  font-size: 1.3em;
+}
+.text-description p {
+  padding: .5em;
+}
+main .bar-left {
+  background:  rgba(254, 89, 93);
+  text-align: center;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+main .icons {
+  height: 100%;
+  color:white;
+  display: grid;
+  grid-template-rows: repeat(9, auto);
+  width: 100%;
+  grid-template-areas: "home"
+                       "fire"
+                       "heart"
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "setting";
+}
+.icon-home{
+grid-area: home;
+cursor: pointer;
+}
+.icon-fire {
+grid-area: fire;
+cursor: pointer;
+}
+.icon-heart{
+grid-area: heart;
+cursor: pointer;
+}
+.icon-setting{
+grid-area: setting;
+cursor: pointer;
+}
+.icon-home p,
+.icon-fire p,
+.icon-heart p,
+.icon-setting p {
+  font-family: 'Lato', sans-serif;
+  font-size: .6em;
+  padding: 13%;
+}
+.icon-setting{
+  display: inline-block;
+  align-self: center;
+}
+.icon-home {
+  /* margin-top: 50%; */
+  align-self: center;
+}
+.icon-fire,
+.icon-heart {
+  align-self: center;
+  /* margin: 50% 0 -80% */
+}
+/* --------------------main end */

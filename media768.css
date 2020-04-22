@@ -1,0 +1,68 @@
+@media screen and (max-width:768px) {
+  body {
+    font-size: 14px;
+  }
+  /* --------------------icon start */
+  .icon-arrow:before{
+    font-size: 1rem;
+  }
+  .icon-home:before,
+  .icon-setting:before,
+  .icon-fire:before,
+  .icon-heart:before {
+    font-size: 1.5rem;
+    }
+  .icon-home p,
+  .icon-fire p,
+  .icon-heart p,
+  .icon-setting p {
+    font-size: .714rem;
+}
+  /* -------------------- icon end */
+  
+  /* -------------------- header start */
+
+  header ul {
+    height: 9vh;
+  }
+  header .icon img {
+    width: 2.14rem;
+    height: 2.14rem;
+  }
+  header .icon span {
+    font-size: 1.43rem;
+  }
+  header .search input {
+    font-size: .857rem;
+  }
+  header .hero img {
+    width: 2.14rem;
+    height: 2.14rem;
+    padding: 0 .429rem 0;
+  }
+  /* -------------------- hedader end */
+
+  /* --------------------main start */
+  main {
+    grid-template-columns: 6% 94%;
+  }
+  main .content-container {
+    display: grid;
+    grid-auto-flow: row;
+  }
+  .rows-style figure img {
+    width: 18rem;
+    height: 9rem;
+  }
+  .rows{
+    width: 18rem;
+    height: 9rem;
+  }
+  .text-description {
+    width: 18rem;
+    height: 4.5rem;
+    margin-top: -25%;
+    padding: .2rem;
+  }
+  /* --------------------main end */
+}

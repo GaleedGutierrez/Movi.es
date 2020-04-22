@@ -1,0 +1,20 @@
+@media screen and (max-width:1024px) {
+  /* --------------------icon start */
+  .icon-arrow:before{
+    font-size: 1rem;
+  }
+  .icon-home:before,
+  .icon-setting:before,
+  .icon-fire:before,
+  .icon-heart:before {
+    font-size: 200%;
+  }
+  /* -------------------- icon end */
+  main .content-container {
+    display: grid;
+    grid-auto-flow: row;
+  }
+  .text-description {
+    padding: .2rem;
+  }
+}

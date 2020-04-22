@@ -1,0 +1,32 @@
+@media screen and (max-width:320px) {
+  body {
+    font-size: 11px;
+  }
+  header ul {
+    height: 3.5rem;
+    margin: auto;
+    box-shadow: none;
+  }
+  header .icon span {
+    font-size: .9rem;
+  }
+  header .icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+  }
+  header .search input {
+    width: 100%;
+    height: 2rem;
+    font-size: .686rem;
+  }
+  header .hero img {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+  main .bar-left{
+    grid-area: bar-left;
+    height: 2.8rem;
+    align-self: center;
+  }
+}
