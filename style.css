@@ -250,12 +250,20 @@ cursor: pointer;
   align-self: center;
 }
 .icon-home {
-  /* margin-top: 50%; */
+  margin-top: 50%;
   align-self: center;
 }
 .icon-fire,
 .icon-heart {
   align-self: center;
   /* margin: 50% 0 -80% */
+}
+.icon-home,
+.icon-fire,
+.icon-heart,
+.icon-setting {
+justify-content: center;
+align-items: center;
+height: 100%;
 }
 /* --------------------main end */
