@@ -250,7 +250,7 @@ cursor: pointer;
   align-self: center;
 }
 .icon-home {
-  /* margin-top: 50%; */
+  margin-top: 50%;
   align-self: center;
 }
 .icon-fire,
@@ -262,7 +262,6 @@ cursor: pointer;
 .icon-fire,
 .icon-heart,
 .icon-setting {
-display: flex;
 justify-content: center;
 align-items: center;
 height: 100%;

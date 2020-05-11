@@ -52,10 +52,21 @@
     width: 100%;
     grid-template-areas: "home fire heart setting";
   }
-.icon-home p,
-.icon-fire p,
-.icon-heart p,
-.icon-setting p {
-  display: none;
-  }
+  .icon-home p,
+  .icon-fire p,
+  .icon-heart p,
+  .icon-setting p {
+    display: none;
+    }
+  .icon-home {
+      margin-top: 0;
+    }
+  .icon-home,
+  .icon-fire,
+  .icon-heart,
+  .icon-setting {
+    justify-content: initial;
+    align-items: initial;
+    height: initial;
+    }
 }
